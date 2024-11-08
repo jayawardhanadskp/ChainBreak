@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "104595461494",
+    "project_id": "chain-break-d4792",
+    "storage_bucket": "chain-break-d4792.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104595461494:android:6b5d5cffb75ecaae2d9657",
+        "android_client_info": {
+          "package_name": "com.bfa.chain_break"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD6DRn97WST7AE8h5W418371TXhWMnelo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

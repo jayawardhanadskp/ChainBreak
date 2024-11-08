@@ -1,0 +1,34 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "chain-break-d4792",
+          "appId": "1:104595461494:android:6b5d5cffb75ecaae2d9657",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "chain-break-d4792",
+          "appId": "1:104595461494:ios:f11ed0297bb01bd22d9657",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "chain-break-d4792",
+          "configurations": {
+            "android": "1:104595461494:android:6b5d5cffb75ecaae2d9657",
+            "ios": "1:104595461494:ios:f11ed0297bb01bd22d9657"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}
