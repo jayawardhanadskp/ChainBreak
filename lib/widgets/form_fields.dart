@@ -24,7 +24,7 @@ class AppFormField extends StatefulWidget {
 }
 
 class _AppFormFieldState extends State<AppFormField> {
-  bool _isObscure = true;
+  bool _isObscure = false;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class _AppFormFieldState extends State<AppFormField> {
       children: [
         Text(
           widget.heading,
-          style: Fonts.normal,
+          style:Theme.of(context).textTheme.displayLarge,
         ),
         const SizedBox(height: 5,),
         TextFormField(
