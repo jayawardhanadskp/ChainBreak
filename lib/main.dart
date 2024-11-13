@@ -1,8 +1,9 @@
 import 'package:chain_break/firebase_options.dart';
+import 'package:chain_break/providers/auth_provider.dart';
+import 'package:chain_break/providers/bottom_navigationbar_provider.dart';
 import 'package:chain_break/providers/process_provider.dart';
-import 'package:chain_break/screens/authentication/login_screen.dart';
-import 'package:chain_break/screens/authentication/sign_up_screen.dart';
-import 'package:chain_break/screens/home_page.dart';
+import 'package:chain_break/screens/authentication/onboard_screen.dart';
+import 'package:chain_break/theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -15,9 +16,9 @@ void main() async {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (context) => ProgressProvider(),
-        )
+        ChangeNotifierProvider(create: (context) => ProgressProvider()),
+        ChangeNotifierProvider(create: (context) => AuthProvider()),
+        ChangeNotifierProvider(create: (context) => BottomNavigationBarProvider()),
       ],
       child: const MyApp(),
     ),
@@ -27,15 +28,12 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: SignUpScreen());
+      title: 'Chain Break App',
+      theme: lightTheme,
+      home: const OnboardScreen(),
+    );
   }
 }
